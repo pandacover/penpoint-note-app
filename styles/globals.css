@@ -1,0 +1,76 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+    letter-spacing: 0;
+    overflow-x: hidden
+}
+
+
+@layer base {
+    h1 {
+        @apply font-black text-6xl leading-normal tracking-normal;
+    }
+
+    h2 {
+        @apply font-extrabold text-5xl leading-normal tracking-normal;
+    }
+
+    h3 {
+        @apply font-bold text-4xl leading-normal tracking-normal;
+    }
+
+    h4 {
+        @apply font-semibold text-3xl leading-normal tracking-normal;
+    }
+
+    h5 {
+        @apply font-medium text-2xl leading-normal tracking-normal;
+    }
+
+    h6 {
+        @apply font-normal text-xl leading-normal tracking-normal;
+    }
+
+    ul {
+        @apply list-disc pl-12;
+    }
+
+    ol {
+        @apply list-decimal pl-12;
+    }
+
+    a {
+        @apply underline underline-offset-1 text-green-500;
+    }
+
+    blockquote {
+        @apply bg-zinc-800 p-4;
+    }
+
+    code {
+        @apply text-sm font-mono py-4 px-2 bg-zinc-800 block w-full;
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.custom-loader {
+    border-color: #fff #fff #000 #000;
+    animation: spin 1.2s infinite;
+}
